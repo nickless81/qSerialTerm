@@ -140,7 +140,7 @@ void Plot::on_gridCheckBox_toggled(bool checked)
   if (checked) {
     grid = new QwtPlotGrid;
 
-    grid->setMajPen(QPen(Qt::black, 0, Qt::DashLine));
+    grid->setMajorPen(QPen(Qt::black, 0, Qt::DashLine));
     grid->attach(ui->plot);
 
     ui->plot->replot();

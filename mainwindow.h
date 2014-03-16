@@ -23,8 +23,8 @@
 #include <QMainWindow>
 #include <QActionGroup>
 
-#include <QtAddOnSerialPort/serialport.h>
-#include <QtAddOnSerialPort/serialportinfo.h>
+#include <QtSerialPort/qserialport.h>
+#include <QtSerialPort/qserialportinfo.h>
 
 #include "aboutdialog.h"
 #include "imagewidget.h"
