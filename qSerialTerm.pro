@@ -20,12 +20,13 @@
 QT          +=  core gui
 
 win32 {
-    CONFIG +=  serialport qwt
+    CONFIG +=  qtserialport qwt
 }
 
 unix {
-    LIBS +=  -lSerialPort -lqwt
-    INCLUDEPATH += /usr/include/qwt
+#JMM    LIBS +=  -lQtSerialPort -lqwt
+    LIBS +=  -lQtSerialPort
+    INCLUDEPATH += /usr/include/qwt /usr/include/qt4/QtSerialPort
 }
 
 TARGET      =   qSerialTerm
