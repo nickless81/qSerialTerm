@@ -18,10 +18,11 @@
 #
 
 QT          +=  core gui
+QT          +=  serialport
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets serialport
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-QWT_ROOT = /media/Datos/Programas/libqwt6
+QWT_ROOT = /usr/local/qwt-6.1.2
 
 include ( $$QWT_ROOT/features/qwt.prf )
 
@@ -30,7 +31,7 @@ win32 {
 }
 
 unix {
-    LIBS +=  -lQt5SerialPort
+    #LIBS +=  -lQt5SerialPort
     #LIBS += -lqwt
     #INCLUDEPATH += /usr/include/qwt
 }
