@@ -18,22 +18,22 @@
 #
 
 QT          +=  core gui
-QT          +=  serialport
+#QT          +=  serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-QWT_ROOT = /usr/local/qwt-6.1.2
+#QWT_ROOT = /usr/local/qwt-6.1.2
 
-include ( $$QWT_ROOT/features/qwt.prf )
+#include ( $$QWT_ROOT/features/qwt.prf )
 
 win32 {
     CONFIG +=  serialport qwt
 }
 
 unix {
-    #LIBS +=  -lQt5SerialPort
+    LIBS +=  -lQt5SerialPort
     #LIBS += -lqwt
-    #INCLUDEPATH += /usr/include/qwt
+    INCLUDEPATH += /usr/include/qwt
 }
 
 TARGET      =   qSerialTerm
@@ -48,8 +48,8 @@ SOURCES     +=  main.cpp\
     slider.cpp \
     framewidget.cpp \
     hexstring.cpp \
-    plot.cpp \
-    plotwidget.cpp \
+    #plot.cpp \
+    #plotwidget.cpp \
     circularbuffer.cpp \
     imagewidget.cpp
 
@@ -62,8 +62,8 @@ HEADERS     +=  mainwindow.h \
     slider.h \
     framewidget.h \
     hexstring.h \
-    plot.h \
-    plotwidget.h \
+    #plot.h \
+    #plotwidget.h \
     circularbuffer.h \
     imagewidget.h
 
@@ -75,8 +75,8 @@ FORMS       +=  mainwindow.ui \
     terminalwidget.ui \
     slider.ui \
     framewidget.ui \
-    plot.ui \
-    plotwidget.ui \
+    #plot.ui \
+    #plotwidget.ui \
     imagewidget.ui
 
 OTHER_FILES +=  \
