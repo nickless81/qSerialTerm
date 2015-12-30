@@ -93,7 +93,7 @@ void MainWindow::on_actionImage_toggled(bool checked)
 
 void MainWindow::on_actionPlot_toggled(bool checked)
 {
-  if (checked) {
+  /*if (checked) {
     plotWidget = new PlotWidget;
 
     ui->fromDeviceGridLayout->addWidget(plotWidget);
@@ -105,7 +105,7 @@ void MainWindow::on_actionPlot_toggled(bool checked)
   } else {
     delete plotWidget;
     plotWidget = 0;
-  }
+  }*/
 }
 
 void MainWindow::on_actionTerminal_toggled(bool checked)
