@@ -27,7 +27,8 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 #include ( $$QWT_ROOT/features/qwt.prf )
 
 win32 {
-    CONFIG +=  serialport qwt
+    CONFIG +=  qwt
+    QT += serialport
 }
 
 unix {
